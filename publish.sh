@@ -21,6 +21,9 @@ done
 
 cd "$OUT"
 repo-add -R "$DB" ./*.pkg.tar.zst
+cp --remove-destination vitalikr2x3.db.tar.gz vitalikr2x3.db
+cp --remove-destination vitalikr2x3.files.tar.gz vitalikr2x3.files
+rm -f ./*.old
 
 cd "$REPO"
 git add -A
